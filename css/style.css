@@ -1,1 +1,102 @@
+/* HMTL Elements */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  scroll-behavior: smooth;
+}
 
+/* Basic Styles */
+hr {
+  color: #fff;
+}
+.flex-container {
+  display: flex;
+}
+.flex-container .align-center {
+  align-self: center;
+  text-align: center;
+}
+.flex-container .align-self-center {
+  align-self: center;
+}
+
+/* Section Hello */
+.hello a {
+  color: #fff;
+  text-decoration: underline;
+}
+.hello .social-icons a {
+  display: inline-block;
+  font-size: 2rem;
+  margin: 0 1rem;
+  transition: all 0.3s ease-in-out;
+}
+.hello .social-icons a:hover {
+  transform: scale(1.1);
+}
+
+/* Section Skill Set */
+.skill-set ul li ul {
+  font-size: 0;
+}
+.skill-set ul li ul li {
+  display: inline-block;
+  font-size: 1.68rem;
+}
+.skill-set ul li ul li::before {
+  content: "x";
+  margin: 0 1rem;
+}
+.skill-set ul li ul li:first-child::before {
+  display: none;
+}
+
+.portfolio-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+}
+.portfolio-item h3 {
+  text-align: center;
+}
+.portfolio-item img {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 10%;
+}
+.portfolio-item .flow-text {
+  margin: 10px;
+}
+.portfolio-btns {
+  text-align: center;
+}
+.portfolio-btns a {
+  margin: 10px 5px;
+}
+.portfolio .wp-projects li a {
+  border-bottom: 1px dotted #fff;
+  color: #fff;
+  display: block;
+  font-size: 1.5rem;
+  width: max-content;
+}
+footer {
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 600px) {
+  .social-icons {
+    text-align: center;
+  }
+  .portfolio-items {
+    grid-template-columns: 1fr;
+  }
+}
